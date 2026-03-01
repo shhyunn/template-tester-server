@@ -1,3 +1,41 @@
+
+# 📁 프로젝트 폴더 구조
+
+본 프로젝트는 Spring Boot 계층형 구조 (Layered Architecture) 를 기반으로 구성되어 있습니다.
+
+```text
+src
+└── main
+├── java
+│    └── com.template_tester
+│         ├── controller     # API 요청 처리 (Controller 계층)
+│         ├── service        # 비즈니스 로직 처리
+│         ├── repository     # DB 접근 계층 (JPA Repository)
+│         ├── domain         # Entity (DB 테이블 매핑 객체)
+│         ├── dto            # 요청/응답 데이터 전달 객체
+│         ├── config         # Spring 설정 파일
+│         └── TemplateTesterApplication.java
+│
+└── resources
+├── application.properties
+├── application-secret.properties
+├── static              # 정적 리소스 (css/js/image)
+└── templates           # View 템플릿
+```
+
+📌 계층 구조 설명
+
+- Controller	클라이언트 HTTP 요청을 처리하는 API 진입점
+- Service	비즈니스 로직 및 트랜잭션 처리
+- Repository	데이터베이스 접근 (CRUD 수행)
+- Domain(Entity)	DB 테이블과 매핑되는 객체
+- DTO	API 요청/응답 데이터 전달 객체
+- Config	Spring 및 보안/설정 관련 클래스
+- 
+
+# ERD
+
+# 설치 방법
 ## DB
 
 1. docker에 db 설치 (docker 없을 시 docker 설치 먼저 하고, docker 키고 cmd에 아래 내용 붙여넣기)
