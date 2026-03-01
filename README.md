@@ -34,6 +34,8 @@ src
 - 
 
 # ERD
+<img width="1428" height="854" alt="image" src="https://github.com/user-attachments/assets/c10bd412-cc83-4d0a-8d2f-e649d7f967d0" />
+
 
 # 설치 방법
 ## DB
